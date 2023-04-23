@@ -1,0 +1,212 @@
+@import url('https://fonts.googleapis.com/css2?family=Fredoka&display=swap');
+/*CSS en general*/
+* {
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Fredoka', sans-serif;
+    margin: 0;
+}
+
+h2 {
+    font-size: 2.7em;
+}
+
+h1 {
+    font-size: 2em;
+}
+
+p {
+    font-size: 1.25em;
+}
+
+/*CSS de los botones*/
+button {
+    font-size: 1.5em;
+    font-weight: bold;
+    padding: 10px 30px;
+    border-radius: 10px;
+    border: 2px solid rgb(194, 31, 31);
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5);
+    color: white;
+    background-color: rgb(255, 115, 3);
+}
+button:hover {
+    background-color: rgb(252, 42, 42);
+}
+
+.container {
+    max-width: 1400px;
+    margin: auto;
+}
+
+/*CSS del header*/
+header {
+    background-color: rgb(255, 255, 255);
+}
+header .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+header .img-banner {
+    width: 160px;
+    height: 160px;
+}
+header nav {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding-bottom: 25px;
+}
+header a {
+    padding: 5px 12px;
+    text-decoration: none;
+    font-weight: bold;
+    color: rgb(0, 0, 0);
+    font-size: 28px;
+}
+header a:hover {
+    color:rgb(255, 115, 3);
+}
+
+/*CSS del Banner*/
+#hero {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+    height: 90vh;
+    background-image: url(../img/banner/BANNER2.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+
+#somos-disfrutable .container {
+    text-align: center;
+    padding: 30px 12px;
+}
+/*CSS de las tarjetas*/
+#nuestras-cartas {
+    background-color: orange;
+    color: rgb(5, 8, 211);
+    text-align: center;
+}
+#nuestras-cartas span {
+    color: rgb(5, 8, 211);
+    font-size: 30px;
+}
+#nuestras-cartas .container {
+    padding: 80px 10px;
+}
+#nuestras-cartas p {
+    display: none; 
+}
+#nuestras-cartas h2 {
+    margin-top: 0;
+    font-size: 3.5em;
+}
+#nuestras-cartas .carta {
+    background-position: center;
+    background-size: cover;
+    padding: 50px;
+    margin: 25px;
+    border-radius: 15px;
+}
+.carta:first-child {
+    background-image: url(../img/tarjetas/Jugos-en-vasos.jpg);
+}
+.carta:nth-child(2) {
+    background-image: url(../img/tarjetas/algunos-jugos.jpg);
+}
+.carta:nth-child(3) {
+    background-image: url(../img/tarjetas/Jugos-mas.jpg);
+}
+/*Redes Sociales*/
+.social-media {
+    padding-left: 15px;
+}
+.social-media h3 {
+    font-weight: bold;
+    color: rgb(253, 114, 0);
+    font-size: 30px;
+    
+}
+.social-media img {
+    height: 50px;
+}
+
+/*CSS del footer*/
+#final p {
+    text-align: flex-end;
+    background-color: rgba(192, 190, 190, 0.1);
+    margin: 0%;
+    display: flex;
+    justify-content: flex-end;
+}
+#final p {
+    color: rgb(100,100,100);
+    margin: 0%;
+    padding: 12px;
+}
+
+@media (min-width: 720px) {
+    header {
+        position: fixed;
+        width: 100%;
+    }
+    header .container {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    header nav {
+        flex-direction: row;
+        padding-bottom: 0;
+        padding-right: 15px;
+    }
+    #somos-disfrutable .container {
+        display: flex;
+        justify-content: space-evenly;
+    }
+    #somo-disfrutable .texto {
+        width: 50%;
+        text-align: initial;
+        padding-left: 40px;
+        max-width: 600px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    #somos-disfrutable h2 {
+        margin-top: 0;
+    }
+    #somos-disfrutable .img-container {
+        background-image: url(../img/tarjetas/tomando-jugoas.jpg);
+        background-size: cover;
+        background-position: center center;
+        height: 400px;
+        width: 900px;
+    }
+    #nuestras-cartas .secciones {
+        display: flex;
+        justify-content: center;
+    }
+    #nuestras-cartas h3 {
+        margin-top: 0;
+    }
+    #nuestras-cartas p {
+        display: block;
+        margin-bottom: 20px;
+    }
+    #nuestras-cartas .carta {
+        padding: 50px;
+        box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5);
+    }
+}

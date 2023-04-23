@@ -1,0 +1,63 @@
+@import url('https://fonts.googleapis.com/css2?family=Fredoka&display=swap');
+*, *:before, *:after {
+    margin: 0;
+    padding: 0;
+    outline: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: 'Fredoka', sans-serif;
+    background: #fc4a1a;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #f7b733, #fc4a1a);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #f7b733, #fc4a1a); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    padding: 0px;
+    margin: 0px;
+}
+.img-banner {
+    height: 160px;
+}
+.contenedor-menu {
+    background-color: #fff;
+    height: 160px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-family: 'Fredoka', sans-serif;
+}
+.container a {
+    padding: 5px 12px;
+    list-style: none;
+    text-decoration: none;
+    font-weight: bold;
+    color: #000;
+    font-size: 28px;
+    justify-content: space-between;
+    flex-direction: column;
+    padding-bottom: 25px;
+    
+}
+.container a:hover {
+    color: rgb(255, 115, 3);
+}
+
+#carta h2 {
+    padding: 15px 20px;
+}
+#carta ul {
+    padding-left: 50px;
+    padding-right: 20px;
+}
+
+/*CSS del footer*/
+#final p {
+    text-align: flex-end;
+    background-color: rgba(192, 190, 190, 0.1);
+    margin: 0%;
+    display: flex;
+    justify-content: flex-end;
+}
+#final p {
+    color: rgb(100,100,100);
+    margin: 0%;
+    padding: 12px;
+}

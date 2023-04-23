@@ -1,0 +1,162 @@
+@import url('https://fonts.googleapis.com/css2?family=Fredoka&display=swap');
+*, *:before, *:after {
+    margin: 0;
+    padding: 0;
+    outline: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: 'Fredoka', sans-serif;
+    background: #fc4a1a;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #f7b733, #fc4a1a);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #f7b733, #fc4a1a); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    padding: 0px;
+    margin: 0px;
+}
+.img-banner {
+    height: 160px;
+}
+.contenedor-menu {
+    background-color: #fff;
+    height: 160px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-family: 'Fredoka', sans-serif;
+}
+.container a {
+    padding: 5px 12px;
+    list-style: none;
+    text-decoration: none;
+    font-weight: bold;
+    color: #000;
+    font-size: 28px;
+    justify-content: space-between;
+    flex-direction: column;
+    padding-bottom: 25px;
+    
+}
+.container a:hover {
+    color: rgb(255, 115, 3);
+}
+
+h1 {
+    text-align: center;
+    margin: 10px 0;
+    font-weight: 800;
+}
+ 
+form {
+    background-color: white;
+    width: 40%;
+    padding: 10px 0;
+    border-radius: 10px;
+    box-shadow: 0 0 6px 0 rgba(255, 255, 255, 0.8);
+    margin: auto;
+}
+ 
+form .grupo {
+    position: relative;
+    margin: 45px;
+}
+input, textarea {
+    background: none;
+    color: #c6c6c6;
+    font-size: 18px;
+    padding: 10px 10px 10px 5px;
+    display: block;
+    width: 100%;
+    border: none;
+    resize: none;
+    border-bottom: 1px solid var(--colorTextos);
+}
+input:focus, textarea:focus {
+    outline: none;
+    color: rgb(94, 93, 93);
+}
+input:focus~label,
+input:valid~label,
+textarea:focus~label,
+textarea:valid~label {
+    position: absolute;
+    top: -14px;
+    font-size: 16px;
+    color: #e9510ae7;
+}
+label {
+    color: var(--colorTextos);
+    font-size: 16px;
+    position: absolute;
+    left: 5px;
+    top: 10px;
+    transition: 0.5s ease all;
+    pointer-events: none;
+}
+input:focus~.barra::before,
+textarea:focus~.barra::before {
+    width: 100%;
+}
+.barra {
+    position: relative;
+    display: block;
+    width: 100%;
+}
+.barra::before {
+    content: '';
+    height: 2px;
+    width: 0;
+    bottom: 0;
+    position: absolute;
+    background: linear-gradient(to right, #f7b733, #fc4a1a);
+    transition: 0.3s ease all;
+    left: 0%;
+}
+button {
+    background: #fc4a1a;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #f7b733, #fc4a1a);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #f7b733, #fc4a1a); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    display: block;
+    width: 100px;
+    height: 40px;
+    border: none;
+    color: #fff;
+    border-radius: 5px;
+    font-size: 16px;
+    margin: 10px auto;
+    cursor: pointer;
+}
+
+/*CSS del footer*/
+#final p {
+    text-align: flex-end;
+    background-color: rgba(192, 190, 190, 0.1);
+    margin: 0%;
+    display: flex;
+    justify-content: flex-end;
+}
+#final p {
+    color: rgb(100,100,100);
+    margin: 0%;
+    padding: 12px;
+}
+ 
+@media screen and (max-width:1100px) {
+    form {
+        width: 50%;
+    }
+}
+@media screen and (max-width:600px) {
+    form {
+        width: 60%;
+    }
+}
+@media screen and (max-width:450px) {
+    form {
+        width: 80%;
+    }
+}
+@media screen and (max-width:300px) {
+    form {
+        width: 90%;
+    }
+}
